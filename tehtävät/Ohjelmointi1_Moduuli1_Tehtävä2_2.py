@@ -1,4 +1,6 @@
+import math
+
 sade = int(input('säde: '))
 
-pintaala = 3.14*sade*sade
+pintaala = math.pi*sade*sade
 print(pintaala)
