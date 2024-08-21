@@ -1,4 +1,4 @@
 
 
 nimi = input('Nimi? ')
-print("moro "+ nimi +" mites pyörii?")
+print(f'moro {nimi} mites pyörii?')

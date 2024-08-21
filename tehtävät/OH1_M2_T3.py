@@ -4,5 +4,5 @@ leveys = int(input('leveys: '))
 pintaala = (korkeus*leveys)
 piiri = 2*korkeus+2*leveys
 
-print("pinta-ala: " + str(pintaala))
-print("piiri: " + str(piiri))
+print(f"pinta-ala: {pintaala}")
+print(f"piiri: {piiri}")
