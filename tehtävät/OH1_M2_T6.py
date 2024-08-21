@@ -1,10 +1,10 @@
-import math
+
 import random
 
 kolme = []
 nelja = []
 
-while(len(kolme)<3):
+while len(kolme)<3:
     kolme.append(random.randint(0,9))
 
 while(len(nelja)<4):
