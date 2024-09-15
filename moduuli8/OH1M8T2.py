@@ -1,8 +1,7 @@
 import mysql.connector
 
-
-def testi(icao):
-    sql = f"select name from airport where ident='{icao}'"
+def testi(maakoodi):
+    sql = f" select distinct(type),count(name) over (partition by type) from airport where iso_country = '{maakoodi}'"
     print(sql)
     kursori = yhteys.cursor()
     kursori.execute(sql)
@@ -10,6 +9,8 @@ def testi(icao):
     for i in tulos:
         print(i)
     return
+
+
 
 yhteys = mysql.connector.connect(
     host="localhost",
@@ -20,5 +21,5 @@ yhteys = mysql.connector.connect(
     autocommit=True
 )
 
-ICAO = input("anna ICAO-koodi: ")
-testi(ICAO)
+maakoodi = input("maakoodi: ")
+testi(maakoodi)
