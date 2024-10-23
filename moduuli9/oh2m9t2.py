@@ -10,6 +10,7 @@ class Auto:
 
 
 
+
     def kiihdytä(self, nopeudenmuutos):
 
         self.tämänhetkinennopeus = self.tämänhetkinennopeus + nopeudenmuutos

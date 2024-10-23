@@ -39,6 +39,7 @@ def kisa():
                 return 0
 
 
+
 kisa()
 for i in lista:
     print(f"{i.rekisteritunnus} {i.huippunopeus} {i.tämänhetkinennopeus} {i.kuljettumatka}")

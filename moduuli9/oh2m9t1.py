@@ -7,4 +7,5 @@ class Auto:
 
 auto1 = Auto("ABC-123",142)
 
+
 print(f"{auto1.rekisteritunnus} {auto1.huippunopeus} {auto1.tämänhetkinennopeus} {auto1.kuljettumatka}")
