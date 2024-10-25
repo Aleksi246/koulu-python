@@ -15,8 +15,9 @@ class Auto:
         self.kuljettumatka = self.kuljettumatka + self.tämänhetkinennopeus * tuntimäärä
 
 
-    def kiihdytä(self, nopeudenmuutos):
+    def kiihdytä(self):
 
+        nopeudenmuutos = random.randint(-10,15)
         self.tämänhetkinennopeus = self.tämänhetkinennopeus + nopeudenmuutos
 
         if self.tämänhetkinennopeus < 0:
@@ -33,7 +34,7 @@ for i in range(1,11):
 def kisa():
     while True:
         for i in lista:
-            i.kiihdytä(random.randint(-10,15))
+            i.kiihdytä()
             i.kulje(1)
             if i.kuljettumatka >= 10000:
                 return 0
