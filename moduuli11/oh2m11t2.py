@@ -51,4 +51,4 @@ for i in range(0,3):
     auto2.kulje(1)
 
 print(f"{auto1.rekisteritunnus:6} huippunopeus: {auto1.huippunopeus} tämänhetkinennopeus: {auto1.tämänhetkinennopeus:3} kuljettumatka: {auto1.kuljettumatka:4} akkukapasiteetti: {auto1.akkukapasiteetti}")
-print(f"{auto2.rekisteritunnus:6} huippunopeus: {auto2.huippunopeus} tämänhetkinennopeus: {auto2.tämänhetkinennopeus:3} kuljettumatka: {auto2.kuljettumatka:4} akkukapasiteetti: {auto2.tankkilitrat}")
+print(f"{auto2.rekisteritunnus:6} huippunopeus: {auto2.huippunopeus} tämänhetkinennopeus: {auto2.tämänhetkinennopeus:3} kuljettumatka: {auto2.kuljettumatka:4} litrat: {auto2.tankkilitrat}")
